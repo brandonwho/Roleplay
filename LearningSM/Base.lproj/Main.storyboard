@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-MediumItalic.ttf">
+            <string>Roboto-MediumItalic</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign InVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="LearningSM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELm-Sk-v38" customClass="shadowingView" customModule="LearningSM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outline" translatesAutoresizingMaskIntoConstraints="NO" id="ROt-9Q-EqS">
+                                        <rect key="frame" x="67" y="6" width="240" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World of Role Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQi-Aj-E1x">
+                                        <rect key="frame" x="107.5" y="58.5" width="160.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-MediumItalic" family="Roboto" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.39215686274509803" green="0.70980392156862748" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DQi-Aj-E1x" firstAttribute="centerY" secondItem="ELm-Sk-v38" secondAttribute="centerY" id="8jh-Ee-cSD"/>
+                                    <constraint firstItem="ROt-9Q-EqS" firstAttribute="top" secondItem="ELm-Sk-v38" secondAttribute="top" constant="6" id="9eN-wl-q2J"/>
+                                    <constraint firstAttribute="trailing" secondItem="ROt-9Q-EqS" secondAttribute="trailing" constant="67.5" id="SSU-xJ-Ev8"/>
+                                    <constraint firstAttribute="bottom" secondItem="ROt-9Q-EqS" secondAttribute="bottom" constant="6" id="fgh-XL-nKW"/>
+                                    <constraint firstItem="DQi-Aj-E1x" firstAttribute="centerX" secondItem="ELm-Sk-v38" secondAttribute="centerX" id="hSX-Hy-AMn"/>
+                                    <constraint firstItem="ROt-9Q-EqS" firstAttribute="leading" secondItem="ELm-Sk-v38" secondAttribute="leading" constant="67.5" id="jQB-CU-ZZ4"/>
+                                    <constraint firstAttribute="height" constant="140" id="lSk-qG-km4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEx-eY-jQC" customClass="shadowingView" customModule="LearningSM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If this is your first time signing in, a new account will be created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0w-T1-TUg">
+                                        <rect key="frame" x="8" y="8" width="359" height="64"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.56470588235294117" green="0.792156862745098" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="I0w-T1-TUg" secondAttribute="bottom" constant="8" id="08S-V8-kzd"/>
+                                    <constraint firstAttribute="height" constant="80" id="2RG-Ou-ohJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="I0w-T1-TUg" secondAttribute="trailing" constant="8" id="2hX-6V-WJG"/>
+                                    <constraint firstItem="I0w-T1-TUg" firstAttribute="top" secondItem="MEx-eY-jQC" secondAttribute="top" constant="8" id="Ft7-F3-UUd"/>
+                                    <constraint firstItem="I0w-T1-TUg" firstAttribute="leading" secondItem="MEx-eY-jQC" secondAttribute="leading" constant="8" id="RlZ-KL-UZX"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select A Sign-In Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCi-LZ-19L">
+                                <rect key="frame" x="16" y="155" width="343" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvo-hm-loU" customClass="RoundedButton" customModule="LearningSM" customModuleProvider="target">
+                                <rect key="frame" x="125" y="208.5" width="125" height="125"/>
+                                <color key="backgroundColor" red="0.37363657355308533" green="0.44180044531822205" blue="0.67851936817169189" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Nvo-hT-mdh"/>
+                                    <constraint firstAttribute="width" constant="125" id="gHs-r1-oAj"/>
+                                </constraints>
+                                <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S31-cY-gpT"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MPt-vK-sx2">
+                                <rect key="frame" x="46" y="363.5" width="283" height="104"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TzG-LN-2GT" customClass="LogInFields" customModule="LearningSM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="19"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="rEH-QK-twc" customClass="LogInFields" customModule="LearningSM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="34" width="283" height="19"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-6M-GyH" customClass="SignInButton" customModule="LearningSM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68" width="283" height="36"/>
+                                        <color key="backgroundColor" red="0.53125679492950439" green="0.75695562362670898" blue="0.95299315452575684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vvo-hm-loU" firstAttribute="top" secondItem="zCi-LZ-19L" secondAttribute="bottom" constant="30" id="93h-TV-G7h"/>
+                            <constraint firstItem="zCi-LZ-19L" firstAttribute="top" secondItem="ELm-Sk-v38" secondAttribute="bottom" constant="15" id="9nj-XT-SQD"/>
+                            <constraint firstItem="zCi-LZ-19L" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BHG-37-W2o"/>
+                            <constraint firstAttribute="trailing" secondItem="MEx-eY-jQC" secondAttribute="trailing" id="BmQ-iw-QrD"/>
+                            <constraint firstItem="vvo-hm-loU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I9F-U0-oT3"/>
+                            <constraint firstItem="ELm-Sk-v38" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O0d-8G-OWb"/>
+                            <constraint firstItem="MPt-vK-sx2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="UTq-jq-20v"/>
+                            <constraint firstItem="MEx-eY-jQC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wfa-mp-PjS"/>
+                            <constraint firstAttribute="trailing" secondItem="ELm-Sk-v38" secondAttribute="trailing" id="YN8-kt-EfR"/>
+                            <constraint firstItem="ELm-Sk-v38" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zh4-KL-QoP"/>
+                            <constraint firstItem="zCi-LZ-19L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="beN-sN-52N"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MEx-eY-jQC" secondAttribute="bottom" id="euf-G5-mJD"/>
+                            <constraint firstItem="MPt-vK-sx2" firstAttribute="top" secondItem="vvo-hm-loU" secondAttribute="bottom" constant="30" id="k08-Fj-kf9"/>
+                            <constraint firstItem="MPt-vK-sx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nrH-gB-BcM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MPt-vK-sx2" secondAttribute="trailing" constant="30" id="zWn-aS-CJp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="40.029985007496258"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="f" width="352" height="328"/>
+        <image name="outline" width="201" height="145"/>
+    </resources>
+</document>
