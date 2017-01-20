@@ -11,6 +11,7 @@ target 'LearningSM' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper', :git => 'https://github.com/jrendel/SwiftKeychainWrapper.git', :branch => 'master'
 
   target 'LearningSMTests' do
     inherit! :search_paths
