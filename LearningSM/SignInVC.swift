@@ -24,10 +24,7 @@ class SignInVC: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-//        if let _ = KeychainWrapper.defaultKeychainWrapper.string(forKey: KEY_UID){
-//            print("JESS: ID found in keychain")
-//            performSegue(withIdentifier: "goToFeed", sender: nil)
-//    }
+/
     }
     
     @IBAction func facebookBtnTapped(_ sender: Any) {
@@ -52,10 +49,7 @@ class SignInVC: UIViewController {
                 print("Brandon: Unable to Authenticate with Firebase - \(error)")
             } else {
                 print("Brandon: Successfully Authenticated with Firebase")
-//                if let user = user {
-//                    let userData = ["provider": credential.provider]
-//                    self.completeSignIn(id: user.uid, userData: userData)
-//                }
+
             }
         })
     }
@@ -69,10 +63,7 @@ class SignInVC: UIViewController {
                 if error == nil {
                 print("Brandon: Email User Authenticated with Firebase")
                 
-//                    if let user = user {
-//                        let userData = ["privder": user.providerID]
-//                        self.completeSignIn(id: user.uid, userData: userData)
-//                    }
+
                     
                 } else {
                     
@@ -83,10 +74,7 @@ class SignInVC: UIViewController {
                         } else {
                             print("Brandon: Successfully Authenticated with Firebase Email")
                             
-//                            if let user = user {
-//                                let userData = ["provider": user.providerID]
-//                                self.completeSignIn(id: user.uid, userData: userData)
-//                            }
+
                     }
                     
                 })
@@ -95,12 +83,6 @@ class SignInVC: UIViewController {
         })
     }
 }
-//    func completeSignIn(id: String, userData: Dictionary<String, String>) {
-////        DataService.ds.createFirbaseDBUser(uid: id, userData: userData)
-//        //let keychainResult = KeychainWrapper.setString(id, forKey: KEY_UID)
-////        let keychainResult = KeychainWrapper.defaultKeychainWrapper.set(id, forKey: KEY_UID)
-////        print("JESS: Data saved to keychain \(keychainResult)")
-//        performSegue(withIdentifier: "goToFeed", sender: nil)
-//    }
+
 }
 
